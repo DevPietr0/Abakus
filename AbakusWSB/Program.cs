@@ -20,11 +20,10 @@ namespace AbakusWSB
             double a = 5;
             double b = 5;
 
-            IDzialanie dodawanie = new Dodawanie();
-            dodawanie.DrukujWynik(a, b);
-
-
-            
+            foreach (var dzialanie in dzialania)
+            {
+                dzialanie.DrukujWynik(a, b);
+            }         
         }
     }
 }
