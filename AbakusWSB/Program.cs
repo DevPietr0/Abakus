@@ -8,6 +8,8 @@ namespace AbakusWSB
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("*** Abakus ***");
+
             List<IDzialanie> dzialania = new List<IDzialanie>()
             {
                 new Dodawanie(),
@@ -16,9 +18,12 @@ namespace AbakusWSB
                 new Dzielenie(),
             };
 
-            Console.WriteLine("*** Abakus ***");
-            double a = 5;
-            double b = 5;
+            Console.WriteLine("Podaj pierwsza liczbe: ");
+            string aStr = Console.ReadLine();
+
+            Console.WriteLine("Podaj druga liczbe: ");
+            string bStr = Console.ReadLine();
+
 
             foreach (var dzialanie in dzialania)
             {
