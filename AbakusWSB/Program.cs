@@ -24,11 +24,18 @@ namespace AbakusWSB
             Console.WriteLine("Podaj druga liczbe: ");
             string bStr = Console.ReadLine();
 
-
-            foreach (var dzialanie in dzialania)
+            if (double.TryParse(aStr, out double a) &&
+                double.TryParse(bStr, out double b))
             {
-                dzialanie.DrukujWynik(a, b);
-            }         
+                foreach (var dzialanie in dzialania)
+                {
+                    dzialanie.DrukujWynik(a, b);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Nieprawidlowe dane wejsciowe!");
+            } 
         }
     }
 }
