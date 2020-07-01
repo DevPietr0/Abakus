@@ -3,8 +3,7 @@ namespace AbakusWSB
 {
     public interface IDzialanie
     {
-        public void PobierzDane();
-        public double Oblicz();
-        public void DrukujWynik();
+        public double Oblicz(double x, double y);
+        public void DrukujWynik(double x, double y);
     }
 }
