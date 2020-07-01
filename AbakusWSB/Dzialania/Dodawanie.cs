@@ -7,19 +7,19 @@ namespace AbakusWSB.Dzialania
         {
         }
 
-        public void DrukujWynik()
+        public void DrukujWynik(double x, double y)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Wynik dodawania: {Oblicz(x, y)}");
         }
 
-        public double Oblicz()
+        public double Oblicz(double x, double y)
         {
-            throw new NotImplementedException();
+            return x + y;
         }
 
         public void PobierzDane()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Podaj dane:");
         }
     }
 }
