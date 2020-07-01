@@ -32,6 +32,14 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IDzialanie.cs" />
+    <Compile Include="Dzialania\Dodawanie.cs" />
+    <Compile Include="Dzialania\Odejmowanie.cs" />
+    <Compile Include="Dzialania\Mnozenie.cs" />
+    <Compile Include="Dzialania\Dzielenie.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dzialania\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
