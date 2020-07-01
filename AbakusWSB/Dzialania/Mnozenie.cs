@@ -9,12 +9,12 @@ namespace AbakusWSB.Dzialania
 
         public void DrukujWynik(double x, double y)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Wynik mnozenia: {Oblicz(x, y)}");
         }
 
         public double Oblicz(double x, double y)
         {
-            throw new NotImplementedException();
+            return x * y;
         }
     }
 }
